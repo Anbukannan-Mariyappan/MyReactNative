@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "MyReactNative",
+    "slug": "MyReactNative",
+    "version": "1.0.0",
+    "android": {
+      "package": "Myreactnative.Android"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b6a0f799-3656-43d2-a843-7837fccb77aa"
+      }
+    }
+  }
+}
