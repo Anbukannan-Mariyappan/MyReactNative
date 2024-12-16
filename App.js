@@ -158,13 +158,7 @@ export default function App() {
           <View style={styles.scoreboardContainer}>
             <View style={styles.scoreContainer}>
               <Text style={styles.scoreText}>Score: {score}</Text>
-              <Text style={styles.scoreText}>Wrong: {wrong}</Text> 
-              <View  style={styles.backContainer}>
-                 <TouchableOpacity style={[styles.difficultyButton, styles.hardButton]} onPress={() => startGame('hard')}>
-                    <Text style={styles.difficultyButtonText}>Hard</Text>
-                  </TouchableOpacity>
-              </View>
-             
+              <Text style={styles.scoreText}>Wrong: {wrong}</Text>             
             </View>  
           </View>
           <View style={styles.gameArea}>
@@ -285,8 +279,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginVertical: baseUnit * 2,
-    //marginHorizontal: baseUnit * 0.8,
-    borderWidth: baseUnit * 2,
+    //borderWidth: baseUnit * 2,
     width:"100%",
     height:"100%"
   },

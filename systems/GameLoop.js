@@ -3,7 +3,7 @@ import { Dimensions } from "react-native";
 import Constants from "../Constants";
 
 // Get screen dimensions
-const { width, height } = Dimensions.get("window");
+const { width, height } = Dimensions.get("screen");
 
 // Calculate responsive grid size (example based on screen width and height)
 const GRID_SIZE = Math.min(width, height) / 20; // Adjust the divisor to fit your grid size
@@ -111,7 +111,7 @@ const GameLoop = (entities, { events, dispatch }) => {
         head.yspeed = yDiff > 0 ? 1 : yDiff < 0 ? -1 : 0;
       }
     }
-    debugger;
+    
     head.nextMove -= 1;
     if (head.nextMove === 0) {
       head.nextMove = head.updateFrequency;
